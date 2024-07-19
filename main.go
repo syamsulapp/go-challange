@@ -6,7 +6,7 @@ import (
 
 func main() {
 	c := &gotenberg.Client{Hostname: "http://localhost:3000"}
-	docs, _ := gotenberg.NewDocumentFromPath("example.docx", "D:/go-challange/docs/example.docx")
+	docs, _ := gotenberg.NewDocumentFromPath("example.docx", "docs/example.docx")
 	req := gotenberg.NewOfficeRequest(docs)
-	c.Store(req, "D:/go-challange/pdf/example.pdf")
+	c.Store(req, "pdf/example.pdf")
 }
